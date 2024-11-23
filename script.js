@@ -28,3 +28,4 @@ form.addEventListener("submit", (e) => {
         .catch(error => alert("Ошибка отправки заявки"));
 
 });
+
