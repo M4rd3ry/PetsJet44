@@ -1,0 +1,150 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin: 0 15px;
+}
+
+header .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+}
+
+header .hamburger .bar {
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Стиль для главной секции */
+main {
+    padding: 50px 20px;
+}
+
+/* Контактная форма */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Секция отзывов */
+#feedback {
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+#feedback .feedback-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#feedback .feedback {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#feedback .feedback span {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Мобильная версия */
+@media screen and (max-width: 768px) {
+    header .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    header .nav-links li {
+        margin: 0;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    header .hamburger {
+        display: flex;
+    }
+
+    header .nav-links.show {
+        display: flex;
+    }
+}
