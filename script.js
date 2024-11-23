@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
     const messenger = document.getElementById("messenger").value;
 
     // Здесь добавляется код для отправки заявки в Telegram-бота
-    const botUrl = `https://api.telegram.org/bot7517099152:AAFrNoJT-BENa922VSLvHIB_gwmtveMXYuQ>/sendMessage?chat_id=<793874940>&text=Заявка от: ${name}%0AEmail: ${email}%0AСообщение: ${message}%0AМессенджер: ${messenger}`;
+    const botUrl = `https://api.telegram.org/bot<7517099152:AAFrNoJT-BENa922VSLvHIB_gwmtveMXYuQ>/sendMessage?chat_id=<793874940>&text=Заявка от: ${name}%0AEmail: ${email}%0AСообщение: ${message}%0AМессенджер: ${messenger}`;
     
     fetch(botUrl)
         .then(response => response.json())
