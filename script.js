@@ -1,10 +1,12 @@
 // Toggle hamburger menu visibility
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.querySelector('nav ul');
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('nav ul');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
 });
 
 // Form submission handler (assuming form has ID 'contactForm')
